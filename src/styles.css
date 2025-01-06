@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+:root {
+    --background-color: #08668a;
+    --primary-color: #98abb2;
+    --secondary-color: #d3f1ff;
+    --content-color: #17ade9;
+}
+
+@keyframes background1 {
+    0% {
+        background-color: var(--content-color);
+    }
+
+    100% {
+        background-color: #54bee8;
+    }
+}
+
+header {
+    height: auto;
+    background-color: var(--primary-color);
+    border: 5px ridge var(--secondary-color);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 5px double var(--secondary-color);
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.register button {
+    margin-bottom: 5px;
+}
+
+.logo {
+    padding: 10px 80px;
+    border: 3px double var(--secondary-color);
+    animation: background1 5s infinite alternate;
+}
+
+.nav-toggle {
+    padding: 10px 10px;
+    transform: rotate(90deg);
+    font-size: 29px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-toggle:hover, .nav-toggle.active {
+    transform: rotate(0deg);
+
+}
+
+.nav-toggle.active {
+    color: white;
+}
+
+nav {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+}
+
+nav li button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--content-color);
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+nav li button:hover {
+    color: white;
+    background-color: #0c5876;
+}
+
+nav li:last-child button {
+    border: none;
+}
+
+section {
+    margin: 15px 0;
+    border: 5px ridge var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+.center-container {
+    padding: 15px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+    padding: 5px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.home-content-info {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.home-content button {
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home-content button:hover {
+    color: white;
+    background-color: #78a1b1;
+    border-color: #dcdcdc;
+}
+
+.menu-content-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-card {
+    position: relative;
+    width: 75%;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: silver;
+    text-align: center;
+    border: 5px ridge var(--primary-color);
+    border-radius: 5px;
+}
+
+.menu-card img {
+    width: 100%;
+    min-height: 291px;
+    border-radius: 5px 5px 0 0;
+}
+
+.menu-desc {
+    margin: 5px;
+    padding: 2px 16px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.item-name {
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 15px 0;
+}
+
+.price {
+    text-align: left;
+    font-size: 29px;
+}
+
+.menu-card button {
+    margin: 20px 0;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+.delivery-container {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.delivery-container form {
+    display: flex;
+    height: 100%;
+}
+
+.delivery-option, .customer-info {
+    height: 100%;
+    width: 50%;
+    margin: 0 5px;
+    padding: 10px;
+    border: 5px ridge var(--primary-color);
+    background-color: var(--content-color);
+    
+
+}
+
+.delivery-option div, .customer-info div {
+    margin-bottom: 25px;
+}
+
+.customer-info {
+    width: 50%;
+}
+
+.customer-info div:last-child {
+    text-align: center;
+}
+
+.location {
+    text-align: center;
+}
+
+.location img {
+    width: 100%;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.about-us h1, .about-us h2 {
+    margin-bottom: 15px;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+.about-us article p {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 5px ridge var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 5px;
+}
+
+
+.hide {
+    display: none;
+}
